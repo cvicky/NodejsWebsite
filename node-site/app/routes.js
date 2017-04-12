@@ -16,7 +16,7 @@ module.exports = router;
 
 //route for about page
 router.get('/about', function(req,res){
-	res.send('about page!');
+	res.sendFile(path.join(__dirname,'../about.html'))
 })
 
 //route for contact
